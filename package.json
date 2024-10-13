@@ -1,0 +1,29 @@
+{
+  "name": "nodejs_crud_api",
+  "version": "1.0.0",
+  "description": "CRUD API node.js",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch ./ ./index.ts",
+    "start:prod": "tsc && node dist/index.js",
+    "start:multi": "nodemon --watch ./ ./multiServer.ts",
+    "test": "jest --silent --verbose --config"
+  },
+  "author": "Vitali Brych",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "@types/supertest": "^6.0.2",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5"
+  }
+}
